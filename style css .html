@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PrestaCustom - Service Automobile</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #111;
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #000;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            color: #ff4b2b;
+            text-transform: uppercase;
+        }
+
+        nav {
+            background-color: #333;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.2em;
+            text-transform: uppercase;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #ff4b2b;
+        }
+
+        .background {
+            background-image: url('https://via.placeholder.com/1600x900.png?text=Voiture+de+Sport+Noir');
+            background-size: cover;
+            background-position: center;
+            padding: 150px 0;
+            text-align: center;
+        }
+
+        .background h2 {
+            font-size: 3em;
+            color: #ff4b2b;
+            text-transform: uppercase;
+        }
+
+        section {
+            padding: 50px 20px;
+            margin: 0 auto;
+            max-width: 1200px;
+        }
+
+        h2 {
+            color: #ff4b2b;
+            font-size: 2.5em;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .prestations {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 40px;
+        }
+
+        .prestations div {
+            width: 30%;
+            text-align: center;
+        }
+
+        .prestations img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .prestations img:hover {
+            transform: scale(1.05);
+        }
+
+        footer {
+            background-color: #222;
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer p {
+            margin: 0;
+            color: #999;
+        }
+
+        form {
+            background-color: #222;
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        form input, form select {
+            width: 100%;
+            padding: 15px;
+            margin: 10px 0;
+            border: none;
+            background-color: #333;
+            color: white;
+            border-radius: 5px;
+        }
+
+        form input[type="submit"] {
+            background-color: #ff4b2b;
+            cursor: pointer;
+        }
+
+        form input[type="submit"]:hover {
+            background-color: #d14124;
+        }
+
+        .info {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 50px;
+        }
+
+        .info div {
+            width: 30%;
+        }
+
+        .map iframe {
+            width: 100%;
+            height: 300px;
+            border: 0;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>PrestaCustom</h1>
+    </header>
+
+    <nav>
+        <a href="#accueil">Accueil</a>
+        <a href="#prestations">Prestations</a>
+        <a href="#prix">Prix</a>
+        <a href="#lieux">Lieux</a>
+        <a href="#devis">Devis</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section class="background">
+        <h2>Personnalisation Sportive Automobile</h2>
+    </section>
+
+    <section id="accueil">
+        <h2>Bienvenue chez PrestaCustom</h2>
+        <p>PrestaCustom est spécialisé dans la personnalisation de véhicules avec des services uniques tels que l'installation de ciels étoilés, de LEDs plancher, et de vitres teintées. Nos prestations sont disponibles dans plusieurs villes pour répondre à vos besoins.</p>
+    </section>
+
+    <section id="prestations">
+        <h2>Nos Prestations</h2>
+        <div class="prestations">
+            <div>
+                <img src="https://via.placeholder.com/600x400.png?text=Ciel+Étoilé" alt="Ciel Étoilé">
+                <h3>Ciel Étoilé</h3>
+                <p>Durée : 5 heures</p>
+            </div>
+            <div>
+                <img src="https://via.placeholder.com/600x400.png?text=LED+Plancher" alt="LED Plancher">
+                <h3>LED Plancher</h3>
+                <p>Durée : 2 heures</p>
+            </div>
+            <div>
+                <img src="https://via.placeholder.com/600x400.png?text=Vitres+Teintées" alt="Vitres Teintées">
+                <h3>Vitres Teintées</h3>
+                <p>Durée : 3 heures</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="prix">
+        <h2>Nos Tarifs</h2>
+        <ul>
+            <li>Ciel Étoilé : 450€</li>
+            <li>LED Plancher : 60€</li>
+            <li>Vitres Teintées : 200€</li>
+        </ul>
+    </section>
+
+    <section id="lieux">
+        <h2>Lieux de Rendez-vous</h2>
+        <div class="info">
+            <div>
+                <h3>Cergy</h3>
+                <p>Adresse : 123 Rue de l'Auto, Cergy</p>
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2634.862572377937!2d2.0469349156748535!3d49.03670077930537!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e6471f73e50b85%3A0xb7bc8e0ad3c03f4f!2sCergy!5e0!3m2!1sfr!2sfr!4v1633967929780!5m2!1sfr!2sfr" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div>
+                <h3>Sarcelles</h3>
+                <p>Adresse : 456 Rue de l'Avenir, Sarcelles</p>
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2634.862572377937!2d2.0469349156748535!3d49.03670077930537!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e6471f73e50b85%3A0xb7bc8e0ad3c03f4f!2sSarcelles!5e0!3m2!1sfr!2sfr!4v1633967929780!5m2!1sfr!2sfr" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div>
+                <h3>Courbevoie</h3>
+                <p>Adresse : 789 Rue du Futur, Courbevoie</p>
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2634.862572377937!2d2.0469349156748535!3d49.03670077930537!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f
